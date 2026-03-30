@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Alex Rivera</title>
+
+    <meta name="author" content="Alex Rivera">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+          <!-- ========== PROFILE SECTION ========== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Alex Rivera
+                </p>
+                <p>
+                  I'm a software engineer and researcher at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> in Seattle, where I work on machine learning systems and scalable distributed computing.
+                </p>
+                <p>
+                  I completed my PhD at <a href="https://www.cs.washington.edu/">University of Washington</a>, advised by <a href="#">Prof. Sarah Chen</a>. My work has been recognized with the <a href="#">ACM SIGSOFT Distinguished Paper Award</a>. Before grad school, I studied Computer Science at <a href="https://www.mit.edu/">MIT</a> and interned at <a href="https://about.meta.com/">Meta AI</a> and <a href="https://www.apple.com/">Apple</a>.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:alex.rivera@example.com">Email</a> &nbsp;/&nbsp;
+                  <a href="#">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/">Github</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/">LinkedIn</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <!-- Using a placeholder avatar since we don't have a real photo -->
+                <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="https://i.pravatar.cc/300?img=12">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ========== PROJECTS SECTION ========== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+                <p>
+                  I'm interested in distributed systems, machine learning infrastructure, and developer tooling. My recent work focuses on making large-scale ML training faster and more reliable. <span class="highlight">Highlighted</span> projects are ones I'm most proud of.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <!-- Project 1 - Highlighted -->
+            <tr onmouseout="proj1_stop()" onmouseover="proj1_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="proj1_image">
+                    <img src="images/zipnerf.jpg" width="160" alt="StreamTrain">
+                  </div>
+                  <img src="images/zipnerf.jpg" width="160" alt="StreamTrain">
+                </div>
+                <script type="text/javascript">
+                  function proj1_start() { document.getElementById('proj1_image').style.opacity = "1"; }
+                  function proj1_stop()  { document.getElementById('proj1_image').style.opacity = "0"; }
+                  proj1_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/">
+                  <span class="papertitle">StreamTrain: Fault-Tolerant Distributed ML Training at Scale</span>
+                </a>
+                <br>
+                <strong>Alex Rivera</strong>, Jamie Patel, Mei Lin, Carlos Ortega
+                <br>
+                <em>OSDI</em>, 2024 &nbsp; <font color="red"><strong>(Best Paper Award)</strong></font>
+                <br>
+                <a href="https://github.com/">GitHub</a> /
+                <a href="https://arxiv.org/">arXiv</a> /
+                <a href="https://www.youtube.com/">video</a>
+                <p>
+                  A distributed training framework that automatically recovers from node failures mid-training, reducing wasted compute by up to 60% on large GPU clusters.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Project 2 -->
+            <tr onmouseout="proj2_stop()" onmouseover="proj2_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="proj2_image">
+                    <img src="images/mip360.jpg" width="160" alt="AutoDebug">
+                  </div>
+                  <img src="images/mip360.jpg" width="160" alt="AutoDebug">
+                </div>
+                <script type="text/javascript">
+                  function proj2_start() { document.getElementById('proj2_image').style.opacity = "1"; }
+                  function proj2_stop()  { document.getElementById('proj2_image').style.opacity = "0"; }
+                  proj2_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/">
+                  <span class="papertitle">AutoDebug: LLM-Powered Automated Bug Localization in Production Systems</span>
+                </a>
+                <br>
+                <strong>Alex Rivera</strong>, Priya Nair, Tom Weston
+                <br>
+                <em>ICSE</em>, 2024
+                <br>
+                <a href="https://github.com/">GitHub</a> /
+                <a href="https://arxiv.org/">arXiv</a>
+                <p>
+                  Uses large language models to automatically pinpoint the root cause of production bugs from logs and stack traces, cutting mean time to resolution by 45%.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Project 3 - Highlighted -->
+            <tr onmouseout="proj3_stop()" onmouseover="proj3_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="proj3_image">
+                    <img src="images/dreamfusion.jpg" width="160" alt="NeuralCache">
+                  </div>
+                  <img src="images/dreamfusion.jpg" width="160" alt="NeuralCache">
+                </div>
+                <script type="text/javascript">
+                  function proj3_start() { document.getElementById('proj3_image').style.opacity = "1"; }
+                  function proj3_stop()  { document.getElementById('proj3_image').style.opacity = "0"; }
+                  proj3_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/">
+                  <span class="papertitle">NeuralCache: Learned Caching Policies for Key-Value Stores</span>
+                </a>
+                <br>
+                <strong>Alex Rivera</strong>, Yuki Tanaka, Fatima Al-Hassan
+                <br>
+                <em>SOSP</em>, 2023
+                <br>
+                <a href="https://github.com/">GitHub</a> /
+                <a href="https://arxiv.org/">paper</a>
+                <p>
+                  A reinforcement learning approach to cache eviction that outperforms LRU and LFU by 30% on real-world workloads from cloud storage systems.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Project 4 -->
+            <tr onmouseout="proj4_stop()" onmouseover="proj4_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="proj4_image">
+                    <img src="images/refnerf.jpg" width="160" alt="CodeLens">
+                  </div>
+                  <img src="images/refnerf.jpg" width="160" alt="CodeLens">
+                </div>
+                <script type="text/javascript">
+                  function proj4_start() { document.getElementById('proj4_image').style.opacity = "1"; }
+                  function proj4_stop()  { document.getElementById('proj4_image').style.opacity = "0"; }
+                  proj4_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/">
+                  <span class="papertitle">CodeLens: Real-Time Code Quality Analysis in CI/CD Pipelines</span>
+                </a>
+                <br>
+                <strong>Alex Rivera</strong>, Marcus Johnson
+                <br>
+                <em>FSE</em>, 2023
+                <br>
+                <a href="https://github.com/">GitHub</a> /
+                <a href="https://arxiv.org/">paper</a>
+                <p>
+                  A lightweight static analysis tool that integrates into CI/CD pipelines and flags performance regressions and security vulnerabilities before they reach production.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Project 5 -->
+            <tr onmouseout="proj5_stop()" onmouseover="proj5_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="proj5_image">
+                    <img src="images/rawnerf.jpg" width="160" alt="GreenML">
+                  </div>
+                  <img src="images/rawnerf.jpg" width="160" alt="GreenML">
+                </div>
+                <script type="text/javascript">
+                  function proj5_start() { document.getElementById('proj5_image').style.opacity = "1"; }
+                  function proj5_stop()  { document.getElementById('proj5_image').style.opacity = "0"; }
+                  proj5_stop();
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/">
+                  <span class="papertitle">GreenML: Carbon-Aware Scheduling for ML Workloads</span>
+                </a>
+                <br>
+                <strong>Alex Rivera</strong>, Aisha Okonkwo, Lena Müller
+                <br>
+                <em>EuroSys</em>, 2022
+                <br>
+                <a href="https://github.com/">GitHub</a> /
+                <a href="https://arxiv.org/">arXiv</a>
+                <p>
+                  A scheduler that shifts ML training jobs to times and regions with lower carbon intensity, reducing the carbon footprint of model training by up to 40%.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- ========== MISC SECTION ========== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Misc</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/cs188.jpg" alt="teaching" width="160">
+              </td>
+              <td width="75%" valign="center">
+                <b>Teaching &amp; Service</b>
+                <br><br>
+                <a href="#">Area Chair, NeurIPS 2024</a>
+                <br>
+                <a href="#">Reviewer, ICML 2023, 2024</a>
+                <br>
+                <a href="#">Teaching Assistant, CSE 451 (Operating Systems), UW, 2020–2022</a>
+                <br>
+                <a href="#">Mentor, UW CSE Undergraduate Research Program, 2021–2023</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                <h2>Blog &amp;<br>Notes</h2>
+              </td>
+              <td width="75%" valign="middle">
+                <a href="#">Why Fault Tolerance in ML Training Is Harder Than You Think</a>
+                <br>
+                <a href="#">A Practical Guide to Carbon-Aware Computing</a>
+                <br>
+                <a href="#">Notes on Distributed Systems Reading Group (2022)</a>
+                <br>
+                <a href="#">Getting Started with Reinforcement Learning for Systems Problems</a>
+              </td>
+            </tr>
+
+          </tbody></table>
+
+          <!-- ========== FOOTER ========== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <!-- <p style="text-align:right;font-size:small;">
+                  Website template from <a href="https://jonbarron.info/">Jon Barron</a>.
+                  Source code available on <a href="https://github.com/jonbarron/jonbarron_website">GitHub</a>.
+                </p> -->
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
